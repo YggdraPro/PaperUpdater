@@ -15,7 +15,7 @@ public final class TestPU extends JavaPlugin {
                 .setJVMOptions("-Xmx7G -Xms7G")
                 .setStartingFile("start.sh");
 
-        PU.removeUnneededPapers().onComplete(complete -> System.out.println(Arrays.toString(complete.getFiles())));
+        PU.removeUnneededPapers();
 
         if (PU.isAvailableUpdate()) {
             System.out.println("Есть новые обновы (" + PU.getCurrentPaperBuild() + "/" + PU.getLatestBuild() + ")");
