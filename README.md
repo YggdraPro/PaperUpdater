@@ -106,7 +106,7 @@ PU.getCurrentPaperJar()
 PU.getCurrentPaperBuild()
 ```
 
-#### Get all JAR files in the server folder 
+#### Get all Paper JAR files in the server folder 
 
 ```java
 PU.getPapers()
