@@ -1,6 +1,6 @@
 # PaperUpdater
 API for PaperMC Minecraft Server core updates.
-Made by [The Asgard](https://asgrad.fun/) with love 💙 
+Made by [**The Asgard**](https://asgrad.fun/) with love 💙 
 
 [discord-invite]: https://discord.gg/QXSGvGrzDj
 [discord-shield]: https://discord.com/api/guilds/646285836500860929/widget.png
@@ -29,8 +29,7 @@ Made by [The Asgard](https://asgrad.fun/) with love 💙
 
 ## How to use
 
-Requires [**Minecraft 1.16.5**][minecraft-url] or **higher**.
-Works with [PaperMC][papermc-url], [SpigotMC][spigotmc-url], [MohistMC][mohist-url], [CraftBukkit][bukkit-url] etc. 
+Requires [**PaperMC**][papermc-url]
 
 > #### For Maven
 ```xml
