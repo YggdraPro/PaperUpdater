@@ -1,6 +1,9 @@
-# PaperUpdater
+<div align="center">
+  <h1> PaperUpdater </h1>
+  
 API for PaperMC Minecraft Server core updates.
-Made by [**The Asgard**](https://asgrad.fun/) with love 💙 
+Made by [**The Asgard**](https://asgrad.fun/) with love 💙
+
 
 [discord-invite]: https://discord.gg/QXSGvGrzDj
 [discord-shield]: https://discord.com/api/guilds/646285836500860929/widget.png
@@ -23,7 +26,8 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [![wiki][]][wiki-url]
 [![javadocs][]][docs-url]
 [![docs][]][docs-url]
-[![discord][]][discord-invite]
+[![discord][]][discord-invite] 
+</div>
 
 [papermc-url]: https://papermc.io/
 
