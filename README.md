@@ -151,3 +151,19 @@ PU.downloadLatestPaper()
 //             |Build|
 PU.downloadPaper("43")
 ```
+
+### File actions 
+
+To make it convenient to handle the moment when, for example, the installation of a file was completed or files were deleted, we did the processing of such actions using `onComplete()` method. Here are some examples: 
+
+```java
+PU.downloadPaper("43").onComplete(complete -> {
+    System.out.println("Installation of build 43 is complete!");
+});
+```
+
+```java
+PU.removeUnneededPapers().onComplete(complete -> {
+    System.out.println("Unnecessary Papers removed: " + complete.getFiles().toString());
+});
+```
