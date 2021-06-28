@@ -1,0 +1,5 @@
+name: TestPU
+version: ${project.version}
+main: org.test.TestPU
+api-version: 1.17
+authors: [ Volan4ik ]
