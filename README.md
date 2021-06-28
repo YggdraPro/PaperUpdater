@@ -68,6 +68,7 @@ public final class Example extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        //                         |Version|
         PU = new PaperUpdater(this, "1.17");
     }
 }    
@@ -83,4 +84,70 @@ if (PU.isAvailableUpdate()) {
 } else {
     // No new update found 
 }
+```
+
+____
+
+#### Get the latest build 
+
+```java
+PU.getLatestBuild()
+```
+
+#### Get the current JAR file 
+
+```java
+PU.getCurrentPaperJar()
+```
+
+#### Get the current build 
+
+```java
+PU.getCurrentPaperBuild()
+```
+
+#### Get all JAR files in the server folder 
+
+```java
+PU.getPapers()
+```
+
+#### Set the start file
+
+```java
+//                |File name|
+PU.setStartingFile("start.sh")
+```
+
+#### Set the content of the start file
+
+```java
+//                        |           Example content          |
+PU.setStartingFileContent("java -jar " + PU.getCurrentPaperJar())
+```
+
+#### Set JVM options (If you have not specified the content of the start file, but have specified the name of the start file )
+
+```java
+//             |Example JVM options|
+PU.setJVMOptions("-Xmx4G -Xms4G")
+```
+
+#### Delete unnecessary JVM files 
+
+```java
+PU.removeUnneededPapers()
+```
+
+#### Download the latest build 
+
+```java
+PU.downloadLatestPaper()
+```
+
+#### Download a specific build of PaperMC
+
+```java
+//             |Build|
+PU.downloadPaper("43")
 ```
