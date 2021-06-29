@@ -11,7 +11,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [discord]: https://img.shields.io/badge/Our-discord-blue?style=for-the-badge&logo=discord
 
 [version]: https://img.shields.io/badge/Version-1.0-success?style=for-the-badge&logo=wiki
-[download]: #how-to-use
+[download]: #---get-started
 
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
 [wiki-url]: https://github.com/TheAsgard/PaperUpdater/wiki
