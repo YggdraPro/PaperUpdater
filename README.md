@@ -72,8 +72,8 @@ public final class Example extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        //                         |Version|
-        PU = new PaperUpdater(this, "1.17");
+        //                         |        Version       |
+        PU = new PaperUpdater(this, MinecraftVersions.AUTO);
     }
 }    
 ```
@@ -182,8 +182,12 @@ ____
 To make it convenient to handle the moment when, for example, the installation of a file was completed or files were deleted, we did the processing of such actions using `onComplete()` method. Here are some examples: 
 
 ```java
-PU.downloadPaper("43").onComplete(complete -> {
-    System.out.println("Installation of build 43 is complete!");
+PU.downloadPaper("468578534845858356845793").onComplete(complete -> {
+    if (complete.isError()) {
+        System.out.println("An error has occurred: " + complete.getErrorMessage())
+    } else {
+        System.out.println("Installation of build 468578534845858356845793 is complete!");
+    }
 });
 ```
 
