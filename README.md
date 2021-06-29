@@ -31,7 +31,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 [papermc-url]: https://papermc.io/
 
-## How to use
+## 🧩 - Get started
 
 Requires [**PaperMC**][papermc-url]
 
@@ -60,7 +60,7 @@ dependencies {
 }
 ```
 
-## Brief Guide
+## ✈ - Brief Guide
 
 **PLEASE READ [OUR DOCUMENTATION][docs-url] ALSO! THIS GUIDE IS NOT ALL THE POSSIBILITIES OF OUR LIBRARY!**
 
@@ -98,11 +98,16 @@ ____
 PU.getLatestBuild()
 ```
 
+____
+
+
 #### Get the current JAR file 
 
 ```java
 PU.getCurrentPaperJar()
 ```
+
+____
 
 #### Get the current build 
 
@@ -110,11 +115,15 @@ PU.getCurrentPaperJar()
 PU.getCurrentPaperBuild()
 ```
 
+____
+
 #### Get all Paper JAR files in the server folder 
 
 ```java
 PU.getPapers()
 ```
+
+____
 
 #### Set the start file
 
@@ -123,6 +132,8 @@ PU.getPapers()
 PU.setStartingFile("start.sh")
 ```
 
+____
+
 #### Set the content of the start file
 
 ```java
@@ -130,12 +141,16 @@ PU.setStartingFile("start.sh")
 PU.setStartingFileContent("java -jar " + PU.getCurrentPaperJar())
 ```
 
-#### Set JVM options (If you have not specified the content of the start file, but have specified the name of the start file )
+____
+
+#### Set JVM options (If you haven't specified the content of the start file, but have specified the name of the start file)
 
 ```java
 //             |Example JVM options|
 PU.setJVMOptions("-Xmx4G -Xms4G")
 ```
+
+____
 
 #### Delete unnecessary JVM files 
 
@@ -143,11 +158,15 @@ PU.setJVMOptions("-Xmx4G -Xms4G")
 PU.removeUnneededPapers()
 ```
 
+____
+
 #### Download the latest build 
 
 ```java
 PU.downloadLatestPaper()
 ```
+
+____
 
 #### Download a specific build of PaperMC
 
@@ -156,7 +175,9 @@ PU.downloadLatestPaper()
 PU.downloadPaper("43")
 ```
 
-### File actions 
+____
+
+#### File actions 
 
 To make it convenient to handle the moment when, for example, the installation of a file was completed or files were deleted, we did the processing of such actions using `onComplete()` method. Here are some examples: 
 
