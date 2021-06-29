@@ -24,7 +24,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 [![version][]][download]
 [![wiki][]][wiki-url]
-[![javadocs][]][docs-url]
+[![javadocs][]][javadocs-url]
 [![docs][]][docs-url]
 [![discord][]][discord-invite] 
 </div>
