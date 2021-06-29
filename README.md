@@ -10,16 +10,16 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 [discord]: https://img.shields.io/badge/Our-discord-blue?style=for-the-badge&logo=discord
 
-[version]: https://img.shields.io/badge/Version-1.0-success?style=for-the-badge&logo=wiki
+[version]: https://img.shields.io/badge/Version-1.1-success?style=for-the-badge&logo=wiki
 [download]: #---get-started
 
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
 [wiki-url]: https://github.com/TheAsgard/PaperUpdater/wiki
 
-[docs]: https://img.shields.io/badge/Our%20documentation-1.0-critical?style=for-the-badge&logo=wiki
+[docs]: https://img.shields.io/badge/Our%20documentation-1.1-critical?style=for-the-badge&logo=wiki
 [docs-url]: https://github.com/TheAsgard/PaperUpdater/wiki/Documentation
 
-[javadocs]: https://img.shields.io/badge/Java%20Doc-1.0-orange?style=for-the-badge&logo=wiki
+[javadocs]: https://img.shields.io/badge/Java%20Doc-1.1-orange?style=for-the-badge&logo=wiki
 [javadocs-url]: https://theasgard.github.io/PaperUpdater/fun/asgard/package-summary.html
 
 [![version][]][download]
@@ -41,7 +41,7 @@ Requires [**PaperMC**][papermc-url]
   <dependency>
     <groupId>fun.asgard</groupId>
     <artifactId>PaperUpdater</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
   </dependency>
 </dependencies>  
 ```
@@ -56,7 +56,7 @@ repositories {
 ```
 ```gradle
 dependencies {
-  implementation 'fun.asgard:PaperUpdater:1.0'
+  implementation 'fun.asgard:PaperUpdater:1.1'
 }
 ```
 
