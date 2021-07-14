@@ -10,16 +10,16 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 [discord]: https://img.shields.io/badge/Our-discord-blue?style=for-the-badge&logo=discord
 
-[version]: https://img.shields.io/badge/Version-1.1-success?style=for-the-badge&logo=wiki
+[version]: https://img.shields.io/badge/Version-1.3-success?style=for-the-badge&logo=wiki
 [download]: #---get-started
 
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
 [wiki-url]: https://github.com/TheAsgard/PaperUpdater/wiki
 
-[docs]: https://img.shields.io/badge/Our%20documentation-1.1-critical?style=for-the-badge&logo=wiki
+[docs]: https://img.shields.io/badge/Our%20documentation-1.2-critical?style=for-the-badge&logo=wiki
 [docs-url]: https://github.com/TheAsgard/PaperUpdater/wiki/Documentation
 
-[javadocs]: https://img.shields.io/badge/Java%20Doc-1.1-orange?style=for-the-badge&logo=wiki
+[javadocs]: https://img.shields.io/badge/Java%20Doc-1.2-orange?style=for-the-badge&logo=wiki
 [javadocs-url]: https://theasgard.github.io/PaperUpdater/fun/asgard/package-summary.html
 
 [![version][]][download]
@@ -37,13 +37,17 @@ Requires [**PaperMC**][papermc-url]
 
 > #### For Maven
 ```xml
-<dependencies>
-  <dependency>
+<repository>
+    <id>the-asgard</id>
+    <url>https://asgard.fun/artifactory/maven-public/</url>
+</repositorys>
+```
+```xml
+<dependency>
     <groupId>fun.asgard</groupId>
     <artifactId>PaperUpdater</artifactId>
-    <version>1.1</version>
-  </dependency>
-</dependencies>  
+    <version>1.3</version>
+</dependency>
 ```
 
 ____
@@ -51,12 +55,12 @@ ____
 > #### For Gradle
 ```gradle
 repositories {
-  mavenCentral()
+    maven { url "https://asgard.fun/artifactory/maven-public/" }
 }
 ```
 ```gradle
 dependencies {
-  implementation 'fun.asgard:PaperUpdater:1.1'
+    implementation 'fun.asgard:PaperUpdater:1.3'
 }
 ```
 
@@ -179,16 +183,16 @@ ____
 
 #### File actions 
 
-To make it convenient to handle the moment when, for example, the installation of a file was completed or files were deleted, we did the processing of such actions using `onComplete()` method. Here are some examples: 
+To make it convenient to handle the moment when, for example, the installation of a file was completed or files were deleted, we did the processing of such actions using `onComplete()` and `onError()` methods. Here are some examples: 
 
 ```java
-PU.downloadPaper("468578534845858356845793").onComplete(complete -> {
-    if (complete.isError()) {
-        System.out.println("An error has occurred: " + complete.getErrorMessage())
-    } else {
+PU.downloadPaper("468578534845858356845793")
+    .onComplete(complete -> {
         System.out.println("Installation of build 468578534845858356845793 is complete!");
-    }
-});
+    })
+    .onError(error -> {
+        System.out.println("An error has occurred: " + error.getErrorMessage())
+    });
 ```
 
 ```java
