@@ -33,7 +33,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 ## 🧩 - Get started
 
-Requires [**PaperMC**][papermc-url]
+**Requires [PaperMC][papermc-url]**
 
 > #### For Maven
 ```xml
