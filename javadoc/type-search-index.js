@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"fun.asgard","l":"DownloadAction"},{"p":"fun.asgard","l":"FileAction"},{"p":"fun.asgard","l":"FileUtils"},{"p":"fun.asgard","l":"MinecraftVersions"},{"p":"fun.asgard","l":"PaperUpdater"},{"p":"fun.asgard","l":"RemoveAction"},{"p":"fun.asgard","l":"PaperUpdater.Utils"}];updateSearchResults();
