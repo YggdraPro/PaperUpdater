@@ -16,7 +16,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
 [wiki-url]: https://github.com/TheAsgard/PaperUpdater/wiki
 
-[docs]: https://img.shields.io/badge/Our%20documentation-1.2-critical?style=for-the-badge&logo=wiki
+[docs]: https://img.shields.io/badge/Our%20documentation-1.3-critical?style=for-the-badge&logo=wiki
 [docs-url]: https://github.com/TheAsgard/PaperUpdater/wiki/Documentation
 
 [javadocs]: https://img.shields.io/badge/Java%20Doc-1.2-orange?style=for-the-badge&logo=wiki
@@ -38,8 +38,8 @@ Requires [**PaperMC**][papermc-url]
 > #### For Maven
 ```xml
 <repository>
-    <id>the-asgard</id>
-    <url>https://asgard.fun/artifactory/maven-public/</url>
+    <id>asgardfun</id>
+    <url>https://asgard.fun/repository/maven-public/</url>
 </repositorys>
 ```
 ```xml
@@ -55,7 +55,7 @@ ____
 > #### For Gradle
 ```gradle
 repositories {
-    maven { url "https://asgard.fun/artifactory/maven-public/" }
+    maven { url "https://asgard.fun/repository/maven-public/" }
 }
 ```
 ```gradle
