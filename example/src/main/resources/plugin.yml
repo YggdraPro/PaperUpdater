@@ -1,5 +1,5 @@
-name: TestPU
+name: PaperUpdaterExample
 version: ${project.version}
-main: org.test.TestPU
+main: fun.asgard.ExamplePlugin
 api-version: 1.17
 authors: [ Volan4ik ]
