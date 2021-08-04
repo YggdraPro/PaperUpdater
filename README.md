@@ -10,7 +10,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 
 [discord]: https://img.shields.io/badge/Our-discord-blue?style=for-the-badge&logo=discord
 
-[version]: https://img.shields.io/badge/Version-1.3-success?style=for-the-badge&logo=wiki
+[version]: https://img.shields.io/badge/Version-1.4-success?style=for-the-badge&logo=wiki
 [download]: #---get-started
 
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
@@ -19,7 +19,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [docs]: https://img.shields.io/badge/Our%20documentation-1.3-critical?style=for-the-badge&logo=wiki
 [docs-url]: https://github.com/TheAsgard/PaperUpdater/wiki/Documentation
 
-[javadocs]: https://img.shields.io/badge/Java%20Doc-1.2-orange?style=for-the-badge&logo=wiki
+[javadocs]: https://img.shields.io/badge/Java%20Doc-1.4-orange?style=for-the-badge&logo=wiki
 [javadocs-url]: https://theasgard.github.io/PaperUpdater/fun/asgard/package-summary.html
 
 [![version][]][download]
@@ -46,7 +46,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 <dependency>
     <groupId>fun.asgard</groupId>
     <artifactId>PaperUpdater</artifactId>
-    <version>1.3</version>
+    <version>1.4</version>
 </dependency>
 ```
 
@@ -60,7 +60,7 @@ repositories {
 ```
 ```gradle
 dependencies {
-    implementation 'fun.asgard:PaperUpdater:1.3'
+    implementation 'fun.asgard:PaperUpdater:1.4'
 }
 ```
 
@@ -76,8 +76,7 @@ public final class Example extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        //                         |        Version       |
-        PU = new PaperUpdater(this, MinecraftVersions.AUTO);
+        PU = new PaperUpdater(this);
     }
 }    
 ```
@@ -118,15 +117,6 @@ ____
 ```java
 PU.getCurrentPaperBuild()
 ```
-
-____
-
-#### Get all Paper JAR files in the server folder 
-
-```java
-PU.getPapers()
-```
-
 ____
 
 #### Set the start file
@@ -156,7 +146,16 @@ PU.setJVMOptions("-Xmx4G -Xms4G")
 
 ____
 
-#### Delete unnecessary JVM files 
+#### Set the path of the Java (If you haven't specified the content of the start file, but have specified the name of the start file)
+
+```java
+//             |     Example path of the Java   |
+PU.setJavaPath("/usr/lib/jvm/jdk-16.0.2/bin/java")
+```
+
+____
+
+#### Delete unnecessary JAR files in the server folder
 
 ```java
 PU.removeUnneededPapers()
@@ -175,8 +174,8 @@ ____
 #### Download a specific build of PaperMC
 
 ```java
-//             |Build|
-PU.downloadPaper("43")
+//                                          |Build id|
+PU.downloadPaper(PU.getUtils().getBuildById(    154   ))
 ```
 
 ____
