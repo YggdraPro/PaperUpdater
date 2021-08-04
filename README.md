@@ -16,7 +16,7 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [wiki]: https://img.shields.io/badge/-Our%20wiki-yellow?style=for-the-badge&logo=wiki
 [wiki-url]: https://github.com/TheAsgard/PaperUpdater/wiki
 
-[docs]: https://img.shields.io/badge/Our%20documentation-1.3-critical?style=for-the-badge&logo=wiki
+[docs]: https://img.shields.io/badge/Our%20documentation-1.4-critical?style=for-the-badge&logo=wiki
 [docs-url]: https://github.com/TheAsgard/PaperUpdater/wiki/Documentation
 
 [javadocs]: https://img.shields.io/badge/Java%20Doc-1.4-orange?style=for-the-badge&logo=wiki
@@ -27,6 +27,8 @@ Made by [**The Asgard**](https://asgrad.fun/) with love 💙
 [![javadocs][]][javadocs-url]
 [![docs][]][docs-url]
 [![discord][]][discord-invite] 
+
+[**Update from 1.3.1 to 1.4**](https://github.com/TheAsgard/PaperUpdater/wiki/Upgrade-from-1.3.1-to-1.4)
 </div>
 
 [papermc-url]: https://papermc.io/
